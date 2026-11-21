@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1125" height="900" viewBox="0 0 2250 1800">
+<rect width="2250" height="1800" fill="white" />
+<defs><marker id="triangle" markerWidth="18" markerHeight="16" refX="16" refY="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L16,8 L0,16 Z" fill="white" stroke="#243746" stroke-width="2" /></marker><marker id="open" markerWidth="14" markerHeight="12" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,6 L0,12" fill="none" stroke="#243746" stroke-width="2" /></marker></defs>
+<g font-family="Arial, sans-serif" fill="#162c3b">
+<text x="50" y="45" font-size="28">Praktikum 2 — UML-Klassendiagramm</text>
+<rect x="25" y="270" width="2200" height="1470" fill="#fafcfd" stroke="#7b919e" />
+<path d="M2050,270 v-35 h175 v35" fill="#e7eef2" stroke="#7b919e" />
+<text x="2070" y="259" font-size="22">bank</text>
+<rect x="50" y="75" width="900" height="158" fill="white" stroke="#243746" stroke-width="2" />
+<text x="500.0" y="110" text-anchor="middle" font-size="22" font-weight="bold">Main</text>
+<path d="M50,127 h900" stroke="#243746" />
+<path d="M50,167 h900" stroke="#243746" />
+<text x="64" y="192" font-family="monospace" font-size="16.00" text-decoration="underline">+ main(args : String[]) : void</text>
+<rect x="805" y="305" width="650" height="156" fill="white" stroke="#243746" stroke-width="2" />
+<text x="1130.0" y="332" text-anchor="middle" font-size="19">«interface»</text>
+<text x="1130.0" y="364" text-anchor="middle" font-size="22" font-weight="bold">CalculateBill</text>
+<path d="M805,381 h650" stroke="#243746" />
+<path d="M805,421 h650" stroke="#243746" />
+<text x="819" y="446" font-family="monospace" font-size="16.00">+ calculate() : double</text>
+<rect x="625" y="535" width="1000" height="444" fill="white" stroke="#243746" stroke-width="2" />
+<text x="1125.0" y="570" text-anchor="middle" font-size="22" font-weight="bold" font-style="italic">Transaction</text>
+<path d="M625,587 h1000" stroke="#243746" />
+<path d="M625,679 h1000" stroke="#243746" />
+<text x="639" y="612" font-family="monospace" font-size="16.00">- date : String</text>
+<text x="639" y="638" font-family="monospace" font-size="16.00">- amount : double</text>
+<text x="639" y="664" font-family="monospace" font-size="16.00">- description : String</text>
+<text x="639" y="704" font-family="monospace" font-size="16.00">+ Transaction(date : String, amount : double, description : String)</text>
+<text x="639" y="730" font-family="monospace" font-size="16.00">+ Transaction(other : Transaction)</text>
+<text x="639" y="756" font-family="monospace" font-size="16.00">+ toString() : String</text>
+<text x="639" y="782" font-family="monospace" font-size="16.00">+ equals(obj : Object) : boolean</text>
+<text x="639" y="834" font-family="monospace" font-size="16.00">+ getDate() : String</text>
+<text x="639" y="860" font-family="monospace" font-size="16.00">+ setDate(date : String) : void</text>
+<text x="639" y="886" font-family="monospace" font-size="16.00">+ getAmount() : double</text>
+<text x="639" y="912" font-family="monospace" font-size="16.00">+ setAmount(amount : double) : void</text>
+<text x="639" y="938" font-family="monospace" font-size="16.00">+ getDescription() : String</text>
+<text x="639" y="964" font-family="monospace" font-size="16.00">+ setDescription(description : String) : void</text>
+<rect x="50" y="1100" width="1040" height="418" fill="white" stroke="#243746" stroke-width="2" />
+<text x="570.0" y="1135" text-anchor="middle" font-size="22" font-weight="bold">Payment</text>
+<path d="M50,1152 h1040" stroke="#243746" />
+<path d="M50,1218 h1040" stroke="#243746" />
+<text x="64" y="1177" font-family="monospace" font-size="16.00">- incomingInterest : double</text>
+<text x="64" y="1203" font-family="monospace" font-size="16.00">- outgoingInterest : double</text>
+<text x="64" y="1243" font-family="monospace" font-size="16.00">+ Payment(date : String, amount : double, description : String)</text>
+<text x="64" y="1269" font-family="monospace" font-size="14.18">+ Payment(date : String, amount : double, description : String, incomingInterest : double, outgoingInterest : double)</text>
+<text x="64" y="1295" font-family="monospace" font-size="16.00">+ Payment(other : Payment)</text>
+<text x="64" y="1321" font-family="monospace" font-size="16.00">+ calculate() : double</text>
+<text x="64" y="1347" font-family="monospace" font-size="16.00">+ toString() : String</text>
+<text x="64" y="1373" font-family="monospace" font-size="16.00">+ equals(obj : Object) : boolean</text>
+<text x="64" y="1425" font-family="monospace" font-size="16.00">+ getIncomingInterest() : double</text>
+<text x="64" y="1451" font-family="monospace" font-size="16.00">+ setIncomingInterest(incomingInterest : double) : void</text>
+<text x="64" y="1477" font-family="monospace" font-size="16.00">+ getOutgoingInterest() : double</text>
+<text x="64" y="1503" font-family="monospace" font-size="16.00">+ setOutgoingInterest(outgoingInterest : double) : void</text>
+<rect x="1160" y="1100" width="1040" height="444" fill="white" stroke="#243746" stroke-width="2" />
+<text x="1680.0" y="1135" text-anchor="middle" font-size="22" font-weight="bold">Transfer</text>
+<path d="M1160,1152 h1040" stroke="#243746" />
+<path d="M1160,1218 h1040" stroke="#243746" />
+<text x="1174" y="1177" font-family="monospace" font-size="16.00">- sender : String</text>
+<text x="1174" y="1203" font-family="monospace" font-size="16.00">- recipient : String</text>
+<text x="1174" y="1243" font-family="monospace" font-size="16.00">+ Transfer(date : String, amount : double, description : String)</text>
+<text x="1174" y="1269" font-family="monospace" font-size="16.00">+ Transfer(date : String, amount : double, description : String, sender : String, recipient : String)</text>
+<text x="1174" y="1295" font-family="monospace" font-size="16.00">+ Transfer(other : Transfer)</text>
+<text x="1174" y="1321" font-family="monospace" font-size="16.00">+ setAmount(amount : double) : void</text>
+<text x="1174" y="1347" font-family="monospace" font-size="16.00">+ calculate() : double</text>
+<text x="1174" y="1373" font-family="monospace" font-size="16.00">+ toString() : String</text>
+<text x="1174" y="1399" font-family="monospace" font-size="16.00">+ equals(obj : Object) : boolean</text>
+<text x="1174" y="1451" font-family="monospace" font-size="16.00">+ getSender() : String</text>
+<text x="1174" y="1477" font-family="monospace" font-size="16.00">+ setSender(sender : String) : void</text>
+<text x="1174" y="1503" font-family="monospace" font-size="16.00">+ getRecipient() : String</text>
+<text x="1174" y="1529" font-family="monospace" font-size="16.00">+ setRecipient(recipient : String) : void</text>
+<path d="M1125,535 V461" fill="none" stroke="#243746" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#triangle)" />
+<path d="M570.0,1100 V1040 H1125 V979" fill="none" stroke="#243746" stroke-width="2" marker-end="url(#triangle)" />
+<path d="M1680.0,1100 V1040 H1125 V979" fill="none" stroke="#243746" stroke-width="2" marker-end="url(#triangle)" />
+<path d="M950,180 H2130 V270" fill="none" stroke="#243746" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#open)" />
+<text x="1450" y="165" font-size="18">Main verwendet Typen aus bank</text>
+<text x="50" y="1780" font-size="18">+ public   − private   |   kursiv: abstrakt   |   unterstrichen: static   |   geerbte Methoden nicht erneut aufgeführt</text><text x="639" y="808" font-family="monospace" font-size="16.00">+ hashCode() : int</text><text x="64" y="1399" font-family="monospace" font-size="16.00">+ hashCode() : int</text><text x="1174" y="1425" font-family="monospace" font-size="16.00">+ hashCode() : int</text><text x="64" y="218" font-family="monospace" font-size="16.00" text-decoration="underline">- check(name : String, condition : boolean) : void</text></g></svg>

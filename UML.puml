@@ -1,0 +1,69 @@
+@startuml
+skinparam classAttributeIconSize 0
+package bank {
+interface CalculateBill {
+--
++ calculate() : double
+}
+abstract class Transaction {
+- date : String
+- amount : double
+- description : String
+--
++ Transaction(date : String, amount : double, description : String)
++ Transaction(other : Transaction)
++ toString() : String
++ equals(obj : Object) : boolean
++ hashCode() : int
++ getDate() : String
++ setDate(date : String) : void
++ getAmount() : double
++ setAmount(amount : double) : void
++ getDescription() : String
++ setDescription(description : String) : void
+}
+class Payment {
+- incomingInterest : double
+- outgoingInterest : double
+--
++ Payment(date : String, amount : double, description : String)
++ Payment(date : String, amount : double, description : String, incomingInterest : double, outgoingInterest : double)
++ Payment(other : Payment)
++ calculate() : double
++ toString() : String
++ equals(obj : Object) : boolean
++ hashCode() : int
++ getIncomingInterest() : double
++ setIncomingInterest(incomingInterest : double) : void
++ getOutgoingInterest() : double
++ setOutgoingInterest(outgoingInterest : double) : void
+}
+class Transfer {
+- sender : String
+- recipient : String
+--
++ Transfer(date : String, amount : double, description : String)
++ Transfer(date : String, amount : double, description : String, sender : String, recipient : String)
++ Transfer(other : Transfer)
++ setAmount(amount : double) : void
++ calculate() : double
++ toString() : String
++ equals(obj : Object) : boolean
++ hashCode() : int
++ getSender() : String
++ setSender(sender : String) : void
++ getRecipient() : String
++ setRecipient(recipient : String) : void
+}
+Transaction ..|> CalculateBill
+Payment --|> Transaction
+Transfer --|> Transaction
+}
+class Main {
+--
+{static} + main(args : String[]) : void
+{static} - check(name : String, condition : boolean) : void
+}
+Main ..> Payment : uses
+Main ..> Transfer : uses
+@enduml
